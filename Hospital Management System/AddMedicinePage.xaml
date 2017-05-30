@@ -1,0 +1,33 @@
+﻿<Page x:Class="Hospital_Management_System.AddMedicinePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+	Title="AddMedicinePage">
+
+    <Grid>
+        <Label Content="Medicine Name" HorizontalAlignment="Left" Height="32" Margin="116,96,0,0" VerticalAlignment="Top" Width="121" FontSize="14.667"/>
+        <Label Content="Disease Type" HorizontalAlignment="Left" Height="30" Margin="116,178,0,0" VerticalAlignment="Top" Width="95" FontSize="14.667"/>
+        <Label Content="Disease Name" HorizontalAlignment="Left" Height="30" Margin="116,256,0,0" VerticalAlignment="Top" Width="106" FontSize="14.667"/>
+        <TextBox Name="txtMedicineName" HorizontalAlignment="Left" Height="25" Margin="257,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" TextChanged="txtMedicineName_TextChanged"/>
+        <ComboBox Name="comboDiseaseType" IsEnabled="False" HorizontalAlignment="Left" Height="25" Margin="257,183,0,0" VerticalAlignment="Top" Width="169" SelectionChanged="comboDiseaseType_SelectionChanged"/>
+        <ComboBox Name="comboDiseaseName" IsEnabled="False" HorizontalAlignment="Left" Height="25" Margin="257,261,0,0" VerticalAlignment="Top" Width="169" SelectionChanged="comboDiseaseName_SelectionChanged"/>
+        <TextBox Name="txtCompanyName" IsEnabled="False" HorizontalAlignment="Left" Height="25" Margin="257,331,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" TextChanged="txtCompanyName_TextChanged"/>
+        <TextBox Name="txtContactNo" IsEnabled="False" HorizontalAlignment="Left" Height="25" Margin="257,399,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" TextChanged="txtContactNo_TextChanged"/>
+        <TextBox Name="txtDate" IsEnabled="False" HorizontalAlignment="Left" Height="25" Margin="740,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" TextChanged="txtDate_TextChanged"/>
+        <TextBox Name="txtQuantity" IsEnabled="False" HorizontalAlignment="Left" Height="25" Margin="740,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" TextChanged="txtQuantity_TextChanged"/>
+        <TextBox Name="txtBuyingPrice" IsEnabled="False" HorizontalAlignment="Left" Height="25" Margin="740,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" TextChanged="txtBuyingPrice_TextChanged"/>
+        <TextBox Name="txtSellingPrice" IsEnabled="False" HorizontalAlignment="Left" Height="25" Margin="740,333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" TextChanged="txtSellingPrice_TextChanged"/>
+        <Button Name="btnAddMedicine" IsEnabled="False" Content="Add Medicine" HorizontalAlignment="Left" Height="45" Margin="656,519,0,0" VerticalAlignment="Top" Width="130" FontSize="14.667" Click="btnAddMedicine_Click"/>
+        <Button x:Name="button" Content="Exit" HorizontalAlignment="Left" Margin="283,519,0,0" VerticalAlignment="Top" Width="106" Height="45" Click="button_Click"/>
+        <Label Content="Company Name" HorizontalAlignment="Left" Margin="116,325,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <Label Content="Date" HorizontalAlignment="Left" Margin="600,96,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <Label Content="Buying Price" HorizontalAlignment="Left" Margin="600,257,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <Label Content="Selling Price/Unit" HorizontalAlignment="Left" Margin="600,329,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <Label Content="Contact Number" HorizontalAlignment="Left" Margin="116,395,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <Label Content="Quantity" HorizontalAlignment="Left" Margin="600,180,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+
+    </Grid>
+</Page>

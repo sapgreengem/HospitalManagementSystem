@@ -1,0 +1,16 @@
+﻿<Window x:Class="Hospital_Management_System.AllocateBedWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AllocateBedWindow" Height="350" Width="400" Topmost="True" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Bed Type" HorizontalAlignment="Left" Height="36" Margin="64,39,0,0" VerticalAlignment="Top" Width="70" FontSize="13.333"/>
+        <Label Content="Choose Ward" HorizontalAlignment="Left" Height="25" Margin="64,105,0,0" VerticalAlignment="Top" Width="90" FontSize="13.333"/>
+        <Label Content="Choose Bed" HorizontalAlignment="Left" Height="25" Margin="64,179,0,0" VerticalAlignment="Top" Width="90" FontSize="13.333"/>
+        <RadioButton Name="radiobtnNormal" Content="NORMAL" HorizontalAlignment="Left" Margin="178,44,0,0" VerticalAlignment="Top" Width="82" Height="25" Checked="radiobtnNormal_Checked" FontSize="13.333"/>
+        <RadioButton Name="radiobtnVIP" Content="VIP" Height="25" HorizontalAlignment="Left" Margin="277,44,0,0" VerticalAlignment="Top" Checked="radiobtnVIP_Checked" Width="41" FontSize="13.333"/>
+        <ComboBox Name="comboboxChooseWard" HorizontalAlignment="Left" Height="25" Margin="178,108,0,0" VerticalAlignment="Top" Width="140" RenderTransformOrigin="0.463,-0.276" SelectionChanged="comboboxChooseWard_SelectionChanged"/>
+        <ComboBox Name="comboboxChooseBed" HorizontalAlignment="Left" Height="25" Margin="178,182,0,0" VerticalAlignment="Top" Width="140" SelectionChanged="comboboxChooseBed_SelectionChanged"/>
+        <Button Name="submitBed" Content="Submit" HorizontalAlignment="Left" Height="36" Margin="130,247,0,0" VerticalAlignment="Top" Width="136" Click="submitBed_Click"/>
+
+    </Grid>
+</Window>

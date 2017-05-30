@@ -1,0 +1,20 @@
+﻿<Page x:Class="Hospital_Management_System.ViewConsultationRequestPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+	Title="ViewConsultationRequestPage">
+
+    <Grid>
+        <Label x:Name="label" Content="All Request" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <Label x:Name="label1" Content="Accepted" HorizontalAlignment="Left" Margin="526,35,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.467,-0.038" FontSize="14.667"/>
+        <Button x:Name="button" Content="Accept Request" HorizontalAlignment="Left" Height="29" Margin="63,519,0,0" VerticalAlignment="Top" Width="114" Click="button_Click" FontSize="14.667"/>
+        <Button x:Name="button1" Content="Reject Request" HorizontalAlignment="Left" Height="29" Margin="302,519,0,0" VerticalAlignment="Top" Width="112" Click="button1_Click" FontSize="14.667"/>
+        <Button x:Name="button2" Content="Exit" HorizontalAlignment="Left" Height="29" Margin="731,519,0,0" VerticalAlignment="Top" Width="83" Click="button2_Click" FontSize="14.667"/>
+        <DataGrid Name="datagridAllRequest" HorizontalAlignment="Left" Height="420" Margin="10,72,0,0" VerticalAlignment="Top" Width="463" SelectionChanged="datagridAllRequest_SelectionChanged"/>
+        <DataGrid Name="datagridAccepted" HorizontalAlignment="Left" Height="420" Margin="526,72,0,0" VerticalAlignment="Top" Width="464" />
+        <TextBox  Name="ulala" HorizontalAlignment="Left" Height="26" Margin="145,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" IsEnabled="False"/>
+    </Grid>
+</Page>

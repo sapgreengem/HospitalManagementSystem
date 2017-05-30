@@ -1,0 +1,26 @@
+﻿<Page x:Class="Hospital_Management_System.UpdateDoctorPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="UpdateDoctorPage">
+
+    <Grid>
+        <Label x:Name="label1" Content="Name" HorizontalAlignment="Left" Margin="181,98,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <Label x:Name="label8" Content="Password" HorizontalAlignment="Left" Margin="181,177,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <Label x:Name="label5" Content="Address" HorizontalAlignment="Left" Margin="181,337,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <Label x:Name="label2" Content="Contact No" HorizontalAlignment="Left" Margin="181,258,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <TextBox x:Name="DocName" HorizontalAlignment="Left" Height="25" Margin="311,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" IsEnabled="True" FontSize="14.667"/>
+        <TextBox x:Name="DocPass" HorizontalAlignment="Left" Height="25" Margin="311,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14.667"/>
+        <TextBox x:Name="DocPhone" HorizontalAlignment="Left" Height="25" Margin="311,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14.667"/>
+        <TextBox x:Name="DocAddress" HorizontalAlignment="Left" Height="47" Margin="311,333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" FontSize="14.667"/>
+        <Button x:Name="btnPass" Content="Update" HorizontalAlignment="Left" Margin="569,184,0,0" VerticalAlignment="Top" Width="75" FontSize="14.667" Click="btnPass_Click"/>
+        <Button x:Name="btnContact" Content="Update" HorizontalAlignment="Left" Margin="569,265,0,0" VerticalAlignment="Top" Width="75" FontSize="14.667" Click="btnContact_Click"/>
+        <Button x:Name="btnAddress" Content="Update" HorizontalAlignment="Left" Margin="569,344,0,0" VerticalAlignment="Top" Width="75" FontSize="14.667" Click="btnAddress_Click"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="379,481,0,0" VerticalAlignment="Top" Width="104" Height="28" Click="btnExit_Click" FontSize="14.667"/>
+        <TextBox x:Name="docid" HorizontalAlignment="Left" Height="23" Margin="106,43,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+
+    </Grid>
+</Page>

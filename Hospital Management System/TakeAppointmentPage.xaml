@@ -1,0 +1,33 @@
+﻿<Page x:Class="Hospital_Management_System.TakeAppointmentPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+	Title="TakeAppointmentPage">
+
+    <Grid>
+
+        <DataGrid Name="datagridDocSchedule" HorizontalAlignment="Left" Height="354" Margin="60,81,0,0" VerticalAlignment="Top" Width="475" SelectionChanged="datagridDocSchedule_SelectionChanged"/>
+        <Label x:Name="label1" Content="Patient Name" HorizontalAlignment="Left" Margin="578,95,0,0" VerticalAlignment="Top" FontSize="14.667" Height="30" Width="117"/>
+        <Label x:Name="label2" Content="Age" HorizontalAlignment="Left" Margin="578,144,0,0" VerticalAlignment="Top" FontSize="14.667" Height="30" Width="43"/>
+        <Label x:Name="label3" Content="Contact No" HorizontalAlignment="Left" Margin="578,49,0,0" VerticalAlignment="Top" FontSize="14.667" Height="30" Width="100"/>
+        <Label x:Name="label4" Content="Address" HorizontalAlignment="Left" Margin="578,204,0,0" VerticalAlignment="Top" FontSize="14.667" Height="30" Width="74"/>
+        <Label x:Name="label5" Content="Doctor's Name" HorizontalAlignment="Left" Margin="578,361,0,0" VerticalAlignment="Top" FontSize="14.667" Height="30" Width="128"/>
+        <Label x:Name="label6" Content="Department" HorizontalAlignment="Left" Margin="578,411,0,0" VerticalAlignment="Top" Width="117" FontSize="14.667" Height="30"/>
+        <TextBox  x:Name="pat_contact_no"  HorizontalAlignment="Left" Height="25" Margin="719,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" TextChanged="textBox2_TextChanged" FontSize="14.667"/>
+        <TextBox x:Name="pat_age" HorizontalAlignment="Left" Height="25" Margin="719,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" FontSize="14.667"/>
+        <TextBox x:Name="pat_name" HorizontalAlignment="Left" Height="25" Margin="719,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" FontSize="14.667" />
+        <TextBox x:Name="pat_address" HorizontalAlignment="Left" Height="45" Margin="719,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" FontSize="14.667"/>
+        <DatePicker Name="datepicker7" HorizontalAlignment="Left" Height="25" Margin="724,259,0,0" VerticalAlignment="Top" Width="210" FontSize="14.667"/>
+        <TextBox x:Name="doc_id" HorizontalAlignment="Left" Height="25" Margin="724,315,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" IsEnabled="False" FontSize="14.667"/>
+        <TextBox x:Name="doc_name" HorizontalAlignment="Left" Height="25" Margin="724,364,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" IsEnabled="False" FontSize="14.667"/>
+        <TextBox x:Name="doc_dept" HorizontalAlignment="Left" Height="25" Margin="724,414,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" IsEnabled="False" FontSize="14.667"/>
+        <Button x:Name="btnAddAppointment" Content="Add Appointment" HorizontalAlignment="Left" Height="37" Margin="737,478,0,0" VerticalAlignment="Top" Width="126" RenderTransformOrigin="1.238,0.838" Click="btnAddAppointment_Click" FontSize="14.667"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Height="37" Margin="181,478,0,0" VerticalAlignment="Top" Width="129" Click="btnExit_Click" FontSize="14.667"/>
+        <Label x:Name="label7" Content="Doctor's ID" HorizontalAlignment="Left" Margin="578,312,0,0" VerticalAlignment="Top" FontSize="14.667" Height="30" Width="98"/>
+        <Label Content="Date" HorizontalAlignment="Left" Height="30" Margin="578,258,0,0" VerticalAlignment="Top" Width="84" FontSize="14.667"/>
+        <Label x:Name="label" Content="Doctor's Schedules" HorizontalAlignment="Left" Margin="60,45,0,0" VerticalAlignment="Top" FontSize="14.667" Height="30" Width="133"/>
+    </Grid>
+</Page>

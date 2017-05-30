@@ -1,0 +1,15 @@
+﻿<Page x:Class="Hospital_Management_System.DispensaryPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+	Title="DispensaryPage">
+
+    <Grid>
+        <Label x:Name="label" Content="All Medicine" HorizontalAlignment="Left" Height="35" Margin="46,23,0,0" VerticalAlignment="Top" Width="95" FontSize="14.667"/>
+        <Button x:Name="button" Content="Exit" HorizontalAlignment="Left" Height="32" Margin="426,502,0,0" VerticalAlignment="Top" Width="123" Click="button_Click"/>
+        <DataGrid Name="datagridDispensary" HorizontalAlignment="Left" Height="413" Margin="46,58,0,0" VerticalAlignment="Top" Width="911"/>
+    </Grid>
+</Page>

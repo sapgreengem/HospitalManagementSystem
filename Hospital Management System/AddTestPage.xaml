@@ -1,0 +1,24 @@
+﻿<Page x:Class="Hospital_Management_System.AddTestByAdminPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+	Title="AddTestByAdminPage">
+
+    <Grid>
+        <DataGrid Name="datagridViewTestList" HorizontalAlignment="Left" Height="345" Margin="118,80,0,0" VerticalAlignment="Top" Width="445"/>
+        <Label Content="Test Name" HorizontalAlignment="Left" Height="32" Margin="592,80,0,0" VerticalAlignment="Top" Width="95" FontSize="14.667"/>
+        <Label Content="Disease Type" HorizontalAlignment="Left" Height="30" Margin="592,175,0,0" VerticalAlignment="Top" Width="95" FontSize="14.667"/>
+        <Label Content="Disease Name" HorizontalAlignment="Left" Height="30" Margin="592,267,0,0" VerticalAlignment="Top" Width="106" FontSize="14.667"/>
+        <Label Content="Cost" HorizontalAlignment="Left" Height="34" Margin="592,358,0,0" VerticalAlignment="Top" Width="54" FontSize="14.667"/>
+        <TextBox Name="txtTestName" HorizontalAlignment="Left" Height="25" Margin="712,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" TextChanged="txtTestName_TextChanged" FontSize="14.667"/>
+        <ComboBox Name="comboDiseaseType" IsEnabled="False" HorizontalAlignment="Left" Height="25" Margin="712,179,0,0" VerticalAlignment="Top" Width="174" SelectionChanged="comboDiseaseType_SelectionChanged" FontSize="14.667"/>
+        <ComboBox Name="comboDiseaseName" IsEnabled="False" HorizontalAlignment="Left" Height="25" Margin="712,272,0,0" VerticalAlignment="Top" Width="169" SelectionChanged="comboDiseaseName_SelectionChanged" FontSize="14.667"/>
+        <TextBox Name="txtCost" IsEnabled="False" HorizontalAlignment="Left" Height="25" Margin="712,361,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" TextChanged="txtCost_TextChanged" FontSize="14.667"/>
+        <Button Name="btnAddTest" IsEnabled="False" Content="Add Test" HorizontalAlignment="Left" Height="36" Margin="650,480,0,0" VerticalAlignment="Top" Width="98" Click="btnAddTest_Click" FontSize="14.667"/>
+        <Button x:Name="button" Content="Exit" HorizontalAlignment="Left" Margin="258,480,0,0" VerticalAlignment="Top" Width="120" FontSize="14.667" Height="36" Click="button_Click"/>
+
+    </Grid>
+</Page>

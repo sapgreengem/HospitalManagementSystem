@@ -1,0 +1,40 @@
+﻿<Page x:Class="Hospital_Management_System.ReleasePatientPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+	Title="ReleasePatientPage">
+
+    <Grid>
+        <Label x:Name="label" Content="Patient Name" HorizontalAlignment="Left" Margin="97,175,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <Label x:Name="label1" Content="Age" HorizontalAlignment="Left" Margin="97,243,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <Label x:Name="label4" Content="Doc Name" HorizontalAlignment="Left" Margin="97,395,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <Label x:Name="label5" Content="Date Of Admit" HorizontalAlignment="Left" Margin="537,100,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.594,-3.981" FontSize="14.667"/>
+        <Label x:Name="label6" Content="Address" HorizontalAlignment="Left" Margin="97,324,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <Label x:Name="label2" Content="Date Of Release" HorizontalAlignment="Left" Margin="97,102,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <Label x:Name="label3" Content="Contact No" HorizontalAlignment="Left" Margin="97,38,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <Label Content="Num Of Admitted days" HorizontalAlignment="Left" Height="30" Margin="537,154,0,0" VerticalAlignment="Top" Width="159" FontSize="14.667"/>
+        <Label Content="Medicine Cost" HorizontalAlignment="Left" Height="36" Margin="537,209,0,0" VerticalAlignment="Top" Width="117" FontSize="14.667"/>
+        <Label Content="Test Cost" HorizontalAlignment="Left" Height="38" Margin="537,393,0,0" VerticalAlignment="Top" Width="95" FontSize="14.667"/>
+        <Label Content="Bed Cost" HorizontalAlignment="Left" Height="36" Margin="537,272,0,0" VerticalAlignment="Top" Width="95" FontSize="14.667"/>
+        <Label Content="Total Cost" HorizontalAlignment="Left" Height="36" Margin="537,336,0,0" VerticalAlignment="Top" Width="137" FontSize="14.667"/>
+        <Label x:Name="label7" Content="Disease" HorizontalAlignment="Left" Margin="537,38,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <TextBox x:Name="txtContactNo" HorizontalAlignment="Left" Height="25" Margin="227,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" TextChanged="txtContactNo_TextChanged"/>
+        <TextBox x:Name="txtDateOfRelease" IsEnabled="False" HorizontalAlignment="Left" Height="25" Margin="227,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191"/>
+        <TextBox x:Name="txtPatientName" HorizontalAlignment="Left" Height="25" Margin="227,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" IsEnabled="False"/>
+        <TextBox x:Name="txtPatientAge" HorizontalAlignment="Left" Height="25" Margin="227,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" IsEnabled="False"/>
+        <TextBox x:Name="txtPatientAddress" HorizontalAlignment="Left" Height="56" Margin="227,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" IsEnabled="False"/>
+        <TextBox x:Name="txtDocName" HorizontalAlignment="Left" Height="25" Margin="227,398,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" IsEnabled="False"/>
+        <TextBox Name="txtDisease" HorizontalAlignment="Left" IsEnabled="False" Height="25" Margin="710,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187"/>
+        <TextBox x:Name="txtDateOfAdmit" HorizontalAlignment="Left" Height="25" Margin="708,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" IsEnabled="False"/>
+        <TextBox Name="txtDays" HorizontalAlignment="Left" Height="25" Margin="710,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" TextChanged="txtDays_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Name="txtMedicineCost" IsEnabled="False" Height="25" Margin="708,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191"/>
+        <TextBox HorizontalAlignment="Left" Name="txtBedCost" Height="25" Margin="708,276,0,0" IsEnabled="False" TextWrapping="Wrap" VerticalAlignment="Top" Width="191"/>
+        <TextBox Name="txtTotalCost" HorizontalAlignment="Left" IsEnabled="False" Height="25" Margin="708,342,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191"/>
+        <TextBox HorizontalAlignment="Left" Name="txtTestCost" IsEnabled="False" Height="25" Margin="708,399,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191"/>
+        <Button x:Name="button1" Content="Exit" HorizontalAlignment="Left" Margin="208,497,0,0" VerticalAlignment="Top" Width="142" Click="button1_Click" Height="58"/>
+        <Button x:Name="btnReleasePatient"  Content="Release Patient" HorizontalAlignment="Left" Margin="649,497,0,0" VerticalAlignment="Top" Width="139" Height="58" Click="btnReleasePatient_Click"/>
+    </Grid>
+</Page>

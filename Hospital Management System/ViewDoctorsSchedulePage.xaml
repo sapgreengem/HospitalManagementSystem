@@ -1,0 +1,16 @@
+﻿<Page x:Class="Hospital_Management_System.ViewDoctorsSchedulePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+	Title="ViewDoctorsSchedulePage">
+
+    <Grid>
+        <DataGrid Name="datagridDocSchedule" HorizontalAlignment="Left" Height="358" Margin="56,102,0,0" VerticalAlignment="Top" Width="890"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Height="47" Margin="445,493,0,0" VerticalAlignment="Top" Width="104" Click="Button_Click_1" FontSize="14.667"/>
+        <Label x:Name="label" Content="Doctor's Schedule" HorizontalAlignment="Left" Margin="56,52,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+
+    </Grid>
+</Page>

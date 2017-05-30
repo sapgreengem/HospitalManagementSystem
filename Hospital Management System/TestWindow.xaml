@@ -1,0 +1,20 @@
+﻿<Window x:Class="Hospital_Management_System.TestWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TestWindow" Height="400" Width="500" Topmost="True" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Date" HorizontalAlignment="Left" Height="25" Margin="96,130,0,0" VerticalAlignment="Top" Width="43" FontSize="13.333"/>
+        <Label Content="Contact Number" HorizontalAlignment="Left" Height="25" Margin="96,70,0,0" VerticalAlignment="Top" FontSize="13.333"/>
+        <Label Content="Disease" HorizontalAlignment="Left" Height="25" Margin="96,190,0,0" VerticalAlignment="Top" Width="69" FontSize="13.333"/>
+        <Label Content="Doc Id" HorizontalAlignment="Left" Height="25" Margin="96,14,0,0" VerticalAlignment="Top" Width="47" FontSize="13.333"/>
+        <Label Content="Test Name" HorizontalAlignment="Left" Height="25" Margin="96,249,0,0" VerticalAlignment="Top" Width="65" FontSize="13.333"/>
+        <Button Content="Save And Exit" HorizontalAlignment="Left" Height="31" Margin="284,309,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="1.115,1.28" Click="Button_Click_2" FontSize="13.333"/>
+        <Button Content="Save And Add More" HorizontalAlignment="Left" Height="31" Margin="96,309,0,0" VerticalAlignment="Top" Width="128" Click="Button_Click_3" FontSize="13.333"/>
+        <TextBox Name="doc_idT" IsEnabled="False" HorizontalAlignment="Left" Height="25" Margin="241,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="13.333"/>
+        <TextBox Name="medwindowContactNumberT" IsEnabled="False"  HorizontalAlignment="Left" Height="25" Margin="241,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="13.333"/>
+        <TextBox Name="medwindowDateT" IsEnabled="False" HorizontalAlignment="Left" Height="25" Margin="241,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="13.333"/>
+        <TextBox Name="diseaseT" IsEnabled="False" HorizontalAlignment="Left" Height="25" Margin="241,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="13.333"/>
+        <ComboBox Name="comboboxTestName" HorizontalAlignment="Left" Height="25" Margin="241,249,0,0" VerticalAlignment="Top" Width="163" FontSize="13.333"/>
+
+    </Grid>
+</Window>

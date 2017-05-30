@@ -1,0 +1,33 @@
+﻿<Page x:Class="Hospital_Management_System.SupplierPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+	Title="SupplierPage">
+
+    <Grid>
+        <Label x:Name="label" Content="Company Name" HorizontalAlignment="Left" Margin="576,29,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="25" Margin="756,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228"/>
+        <Label x:Name="label1" Content="Contact No" HorizontalAlignment="Left" Margin="576,82,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="25" Margin="756,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label2" Content="Product Name" HorizontalAlignment="Left" Margin="576,136,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="25" Margin="756,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="756,197,0,0" VerticalAlignment="Top" Width="120" />
+        <Label x:Name="label3" Content="Quantity Purchased" HorizontalAlignment="Left" Margin="576,307,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <DatePicker Name="datepicker" HorizontalAlignment="Left" Height="28" Margin="756,260,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="25" Margin="756,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label4" Content="Purchasing Price/Unit" HorizontalAlignment="Left" Margin="576,367,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="25" Margin="756,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label5" Content="Selling Price/Unit" HorizontalAlignment="Left" Margin="576,425,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <TextBox x:Name="textBox5" HorizontalAlignment="Left" Height="25" Margin="756,430,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnAddSupplier" Content="Add" HorizontalAlignment="Left" Margin="712,484,0,0" VerticalAlignment="Top" Width="88" Click="btnAddSupplier_Click" Height="29"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="456,538,0,0" VerticalAlignment="Top" Width="88" Click="btnExit_Click" Height="28"/>
+        <Label x:Name="label6" Content="Product Type" HorizontalAlignment="Left" Margin="576,191,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <Label x:Name="label7" Content="Purchased Date" HorizontalAlignment="Left" Margin="576,246,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <Label x:Name="label8" Content="Supplier Information" HorizontalAlignment="Left" Margin="10,29,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <DataGrid Name="datagridSupplier" HorizontalAlignment="Left" Height="388" Margin="10,67,0,0" VerticalAlignment="Top" Width="534"/>
+        <Button Content="Refresh" HorizontalAlignment="Left" Margin="190,484,0,0" VerticalAlignment="Top" Width="94" Name="Refresh" Click="Refresh_Click_1" Height="29"/>
+    </Grid>
+</Page>

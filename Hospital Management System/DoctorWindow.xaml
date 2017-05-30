@@ -1,0 +1,20 @@
+﻿<Window x:Class="Hospital_Management_System.DoctorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DoctorWindow" WindowState="Maximized" WindowStartupLocation="CenterScreen" Height="600" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="image/Doctor.jpg"/>
+    </Window.Background>
+
+    <Grid>
+        <Frame x:Name="doctorFrame" NavigationUIVisibility="Hidden" Content="" HorizontalAlignment="Left" Height="600" Margin="250,0,0,0" VerticalAlignment="Top" Width="1000"/>
+        <Label x:Name="lblDoctor" Content="Doctor" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,192,0,0"/>
+        <Button x:Name="btnViewRequests" Content="View Requests" HorizontalAlignment="Left" Margin="34,218,0,0" VerticalAlignment="Top" Height="25" Width="136" Click="btnViewRequests_Click"/>
+        <Button x:Name="btnPatientRecord" Content="Patient Record" HorizontalAlignment="Left" Margin="34,320,0,0" VerticalAlignment="Top" Height="25" Width="136" Click="btnPatientRecord_Click"/>
+        <Label x:Name="label" Content="Logged in as Doctor" HorizontalAlignment="Left" Margin="44,25,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="Logout" HorizontalAlignment="Left" Margin="111,86,0,0" VerticalAlignment="Top" Width="59" Click="button_Click"/>
+        <Button x:Name="btnUpdateInfo" Content="Update" HorizontalAlignment="Left" Margin="34,86,0,0" VerticalAlignment="Top" Width="56" Click="btnUpdateInfo_Click"/>
+        <Button x:Name="btnCheckPatient" Content="Check Patient" HorizontalAlignment="Left" Height="25" Margin="34,271,0,0" VerticalAlignment="Top" Width="136" Click="btnCheckPatient_Click"/>
+        <TextBox x:Name="loginAsDoctor" HorizontalAlignment="Left" Height="23" Margin="34,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" IsEnabled="False"/>
+    </Grid>
+</Window>

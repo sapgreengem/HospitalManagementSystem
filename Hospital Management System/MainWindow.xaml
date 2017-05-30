@@ -1,0 +1,17 @@
+﻿<Window x:Class="Hospital_Management_System.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Hospital Management System" WindowState="Maximized" WindowStartupLocation="CenterScreen" Height="600" Width="1000">
+    <Window.Background>
+        <ImageBrush ImageSource="image/HMS.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Label Content="Loggin As" HorizontalAlignment="Left" Height="30" Margin="526,204,0,0" VerticalAlignment="Top" Width="86" FontSize="14.667"/>
+        <Label x:Name="label" Content="ID" HorizontalAlignment="Left" Margin="526,260,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <Label x:Name="label1" Content="Password" HorizontalAlignment="Left" Margin="526,320,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <ComboBox Name="combobox" HorizontalAlignment="Left" Height="26" Margin="616,206,0,0" VerticalAlignment="Top" Width="150" FontSize="14.667"/>
+        <TextBox x:Name="textboxUsername" HorizontalAlignment="Left" Height="26" Margin="616,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontSize="14.667"/>
+        <PasswordBox Name="textboxPassword" HorizontalAlignment="Left" Height="26" Margin="616,324,0,0" VerticalAlignment="Top" Width="150" FontSize="14.667"/>
+        <Button Content="Login" Name="btnLogin" HorizontalAlignment="Left" Height="52" Margin="588,472,0,0" VerticalAlignment="Top" Width="106" Click="btnLogin_Click"/>
+    </Grid>
+</Window>
